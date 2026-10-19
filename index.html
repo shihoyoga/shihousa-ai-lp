@@ -75,7 +75,9 @@ html[data-play="on"] [data-usamenu][data-show]:not([data-open]) [data-usamenu-bt
 @keyframes sp-sway { 0%, 100% { rotate: 0deg; translate: 0 0; } 50% { rotate: 4deg; translate: 0 -6px; } }
 @keyframes sp-wiggle { 0%, 82%, 100% { rotate: 0deg; } 88% { rotate: -6deg; } 94% { rotate: 5deg; } }
 @keyframes sp-spin { 0%, 70%, 100% { rotate: 0deg; } 85% { rotate: 14deg; } }
+@media (max-width: 960px) { [data-voices] { column-count: 2 !important; } }
 @media (max-width: 720px) {
+ [data-voices] { column-count: 1 !important; }
   [data-sp-visual] { display: block !important; }
   section[data-screen-label="Hero"] { padding-top: 16px !important; }
   [data-hero-visual] { min-height: 300px !important; }
@@ -103,7 +105,7 @@ html[data-play="on"] [data-usamenu][data-show]:not([data-open]) [data-usamenu-bt
 <div data-usamenu="" style="position: fixed; right: 14px; bottom: 16px; z-index: 60;">
   <nav data-usamenu-panel="" aria-label="メニュー" style="position: absolute; right: 0; bottom: 84px; width: min(260px, calc(100vw - 28px)); padding: 14px 18px 18px; border-radius: 26px; background: #FAF6F2; border: 1px solid #E8C4C0; box-shadow: 0 18px 40px rgba(87,75,71,.22); transform-origin: 90% 100%;">
     <span style="display: block; font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 12px; letter-spacing: .14em; color: #7E636A; padding: 0 6px 4px;">MENU 🐰</span>
-    <a href="#works" data-menu-link="" style="display: flex; align-items: center; gap: 10px; padding: 12px 6px; border-bottom: 1px dashed #E8C4C0; color: #574B47; text-decoration: none; font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 16px;"><span style="color: #C9A86A; font-size: 12px;">✦</span>つくったもの</a><a href="#learn" data-menu-link="" style="display: flex; align-items: center; gap: 10px; padding: 12px 6px; border-bottom: 1px dashed #E8C4C0; color: #574B47; text-decoration: none; font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 16px;"><span style="color: #C9A86A; font-size: 12px;">✦</span>アーカイブの内容</a><a href="#foryou" data-menu-link="" style="display: flex; align-items: center; gap: 10px; padding: 12px 6px; border-bottom: 1px dashed #E8C4C0; color: #574B47; text-decoration: none; font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 16px;"><span style="color: #C9A86A; font-size: 12px;">✦</span>こんな方へ</a><a href="#details" data-menu-link="" style="display: flex; align-items: center; gap: 10px; padding: 12px 6px; border-bottom: 1px dashed #E8C4C0; color: #574B47; text-decoration: none; font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 16px;"><span style="color: #C9A86A; font-size: 12px;">✦</span>アーカイブ概要</a><a href="#faq" data-menu-link="" style="display: flex; align-items: center; gap: 10px; padding: 12px 6px; border-bottom: 1px dashed #E8C4C0; color: #574B47; text-decoration: none; font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 16px;"><span style="color: #C9A86A; font-size: 12px;">✦</span>よくあるご質問</a>
+    <a href="#works" data-menu-link="" style="display: flex; align-items: center; gap: 10px; padding: 12px 6px; border-bottom: 1px dashed #E8C4C0; color: #574B47; text-decoration: none; font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 16px;"><span style="color: #C9A86A; font-size: 12px;">✦</span>つくったもの</a><a href="#voices" data-menu-link="" style="display: flex; align-items: center; gap: 10px; padding: 12px 6px; border-bottom: 1px dashed #E8C4C0; color: #574B47; text-decoration: none; font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 16px;"><span style="color: #C9A86A; font-size: 12px;">✦</span>参加者さんの声</a><a href="#learn" data-menu-link="" style="display: flex; align-items: center; gap: 10px; padding: 12px 6px; border-bottom: 1px dashed #E8C4C0; color: #574B47; text-decoration: none; font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 16px;"><span style="color: #C9A86A; font-size: 12px;">✦</span>アーカイブの内容</a><a href="#foryou" data-menu-link="" style="display: flex; align-items: center; gap: 10px; padding: 12px 6px; border-bottom: 1px dashed #E8C4C0; color: #574B47; text-decoration: none; font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 16px;"><span style="color: #C9A86A; font-size: 12px;">✦</span>こんな方へ</a><a href="#details" data-menu-link="" style="display: flex; align-items: center; gap: 10px; padding: 12px 6px; border-bottom: 1px dashed #E8C4C0; color: #574B47; text-decoration: none; font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 16px;"><span style="color: #C9A86A; font-size: 12px;">✦</span>アーカイブ概要</a><a href="#faq" data-menu-link="" style="display: flex; align-items: center; gap: 10px; padding: 12px 6px; border-bottom: 1px dashed #E8C4C0; color: #574B47; text-decoration: none; font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 16px;"><span style="color: #C9A86A; font-size: 12px;">✦</span>よくあるご質問</a>
     <a href="https://liff.line.me/2007280677-QBKnv6Ar?product_id=23453&amp;type=product-detail&amp;ts=1792118146" target="_blank" rel="noopener" data-menu-link="" style="display: flex; justify-content: center; margin-top: 14px; padding: 12px 18px; border-radius: 999px; background: #574B47; color: #fff; text-decoration: none; font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 15px;">アーカイブを購入する</a>
     <a href="https://usatoasobu.kitone.life/" data-menu-link="" style="display: block; margin-top: 10px; text-align: center; font-size: 12px;">うさとあそ部に入部して視聴する →</a>
   </nav>
@@ -248,6 +250,59 @@ html[data-play="on"] [data-usamenu][data-show]:not([data-open]) [data-usamenu-bt
           <sc-for list="{{ insta2 }}" as="src" hint-placeholder-count="4"><img src="{{ src }}" alt="Instagram投稿" loading="lazy" style="flex: 0 0 min(62%, 260px); aspect-ratio: 4 / 5; object-fit: cover; border-radius: 16px; scroll-snap-align: start; display: block;"></sc-for>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="voices" data-screen-label="Voices" style="padding: clamp(72px, 9vw, 112px) 0;">
+    <div style="text-align: center;">
+      <span style="display: block; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: #7E636A;">Voices</span>
+      <h2 style="margin: 12px 0 0; font-family: 'Kanata', 'Shippori Mincho', serif; font-weight: 400; font-size: clamp(28px, 4vw, 42px); line-height: 1.5;">参加者さんの声</h2>
+      <p style="margin: 16px 0 0; font-size: 16px; line-height: 2;">講義のあとのアンケートから、<br>いただいた声をそのままご紹介します🐰</p>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 32px auto 0;">
+      <p style="margin: 0; display: inline-flex; align-items: baseline; gap: 8px; padding: 12px 22px; border-radius: 999px; background: #E8C4C0; font-size: 14px; font-weight: 700;">アンケート回答19件のうち<span style="font-family: 'Raleway', sans-serif; font-weight: 200; font-size: 30px; line-height: 1;">13</span>件が、講義中に「たたき台」〜「公開」まで進みました</p>
+    </div>
+    <div data-voices="" style="column-count: 3; column-gap: 16px; margin-top: 40px;">
+      <figure data-reveal="soft" style="break-inside: avoid; margin: 0 0 16px; padding: 24px 24px 22px; border-radius: 24px; background: #fff; border: 1px solid #E8C4C0; display: flex; flex-direction: column; gap: 12px;">
+        <span style="align-self: flex-start; padding: 4px 12px; border-radius: 999px; background: #574B47; color: #fff; font-size: 11px; font-weight: 700; line-height: 1.5;">URLを発行・公開するところまでできた</span>
+        <figcaption style="font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 19px; line-height: 1.5;"><span style="color: #C9A86A;">“</span>初めてでも、公開まで<span style="color: #C9A86A;">”</span></figcaption>
+        <blockquote style="margin: 0; font-size: 14px; line-height: 2; color: #574B47;">初めて作ってみました。簡単にできていいですね～。しほさんスタイルでかわいくできてうれしかったです。</blockquote>
+      </figure>
+      <figure data-reveal="soft" style="break-inside: avoid; margin: 0 0 16px; padding: 24px 24px 22px; border-radius: 24px; background: #fff; border: 1px solid #E8C4C0; display: flex; flex-direction: column; gap: 12px;">
+        <span style="align-self: flex-start; padding: 4px 12px; border-radius: 999px; background: #E8C4C0; color: #574B47; font-size: 11px; font-weight: 700; line-height: 1.5;">たたき台ができ、ブラッシュアップ中</span>
+        <figcaption style="font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 19px; line-height: 1.5;"><span style="color: #C9A86A;">“</span>Canvaで頑張っていた私が<span style="color: #C9A86A;">”</span></figcaption>
+        <blockquote style="margin: 0; font-size: 14px; line-height: 2; color: #574B47;">数回のやり取りで、良い感じに作ってくれてびっくりしました❣️<br>…今までチャッピーだとダサくなっちゃうのが本当にイヤで無理ー！と思ってcanvaで頑張って作ってきました。うさしほさんの「ずぼら部」のLPを見た時に、こんな可愛いLP作りたいなぁと思っていたので、まさかクロードで作れるとは！と感動しています。</blockquote>
+      </figure>
+      <figure data-reveal="soft" style="break-inside: avoid; margin: 0 0 16px; padding: 24px 24px 22px; border-radius: 24px; background: #fff; border: 1px solid #E8C4C0; display: flex; flex-direction: column; gap: 12px;">
+        <span style="align-self: flex-start; padding: 4px 12px; border-radius: 999px; background: #E8C4C0; color: #574B47; font-size: 11px; font-weight: 700; line-height: 1.5;">たたき台ができ、ブラッシュアップ中</span>
+        <figcaption style="font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 19px; line-height: 1.5;"><span style="color: #C9A86A;">“</span>プロンプト一つで、めちゃかわいい<span style="color: #C9A86A;">”</span></figcaption>
+        <blockquote style="margin: 0; font-size: 14px; line-height: 2; color: #574B47;">プロンプト一つで、クロードでめちゃかわいいのができて、AIもプロンプトもすごいってなりました〜！フォントや色味の設定とかもめちゃめちゃ具体的に指示をしなきゃいけないんだなって言うこともわかったし、音声入力でできるだけ楽してまずはたたき台を作ることがまず大事ですね！</blockquote>
+      </figure>
+      <figure data-reveal="soft" style="break-inside: avoid; margin: 0 0 16px; padding: 24px 24px 22px; border-radius: 24px; background: #fff; border: 1px solid #E8C4C0; display: flex; flex-direction: column; gap: 12px;">
+        <span style="align-self: flex-start; padding: 4px 12px; border-radius: 999px; background: #F7EFE1; color: #574B47; font-size: 11px; font-weight: 700; line-height: 1.5;">AIへの指示・作成を試している途中</span>
+        <figcaption style="font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 19px; line-height: 1.5;"><span style="color: #C9A86A;">“</span>毎日触りたくなった<span style="color: #C9A86A;">”</span></figcaption>
+        <blockquote style="margin: 0; font-size: 14px; line-height: 2; color: #574B47;">LPというと固くなりがちですが、プロフィールとか、未来の企画とか、じゃんじゃん作れると思うとワクワクして、毎日触ったり作りたくなりました！その気持ちが大事なので、よかったです！！！</blockquote>
+      </figure>
+      <figure data-reveal="soft" style="break-inside: avoid; margin: 0 0 16px; padding: 24px 24px 22px; border-radius: 24px; background: #fff; border: 1px solid #E8C4C0; display: flex; flex-direction: column; gap: 12px;">
+        <span style="align-self: flex-start; padding: 4px 12px; border-radius: 999px; background: #F7EFE1; color: #574B47; font-size: 11px; font-weight: 700; line-height: 1.5;">まだ作れていない・途中でつまずいた</span>
+        <figcaption style="font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 19px; line-height: 1.5;"><span style="color: #C9A86A;">“</span>私にも出来るかも！<span style="color: #C9A86A;">”</span></figcaption>
+        <blockquote style="margin: 0; font-size: 14px; line-height: 2; color: #574B47;">自分で調べてやるとなると出来るのだろうけど億劫だな…と思っていたところを「私にも出来るかも！」まで持っていっていただけて感謝です🌟今月中に完成させたい！</blockquote>
+      </figure>
+      <figure data-reveal="soft" style="break-inside: avoid; margin: 0 0 16px; padding: 24px 24px 22px; border-radius: 24px; background: #fff; border: 1px solid #E8C4C0; display: flex; flex-direction: column; gap: 12px;">
+        <span style="align-self: flex-start; padding: 4px 12px; border-radius: 999px; background: #E8C4C0; color: #574B47; font-size: 11px; font-weight: 700; line-height: 1.5;">たたき台ができ、ブラッシュアップ中</span>
+        <figcaption style="font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 19px; line-height: 1.5;"><span style="color: #C9A86A;">“</span>初めてのClaudeでも<span style="color: #C9A86A;">”</span></figcaption>
+        <blockquote style="margin: 0; font-size: 14px; line-height: 2; color: #574B47;">初めてclaudつかいました。こんなに簡単に作れるのにびっくりです。何に活用するのかはまだ明確ではないですが、LP以外にもチラシや投稿用のものなど色々作ってみたいです。</blockquote>
+      </figure>
+      <figure data-reveal="soft" style="break-inside: avoid; margin: 0 0 16px; padding: 24px 24px 22px; border-radius: 24px; background: #fff; border: 1px solid #E8C4C0; display: flex; flex-direction: column; gap: 12px;">
+        <span style="align-self: flex-start; padding: 4px 12px; border-radius: 999px; background: #E8C4C0; color: #574B47; font-size: 11px; font-weight: 700; line-height: 1.5;">たたき台ができ、ブラッシュアップ中</span>
+        <figcaption style="font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 19px; line-height: 1.5;"><span style="color: #C9A86A;">“</span>AIっぽくしない方法を知れた<span style="color: #C9A86A;">”</span></figcaption>
+        <blockquote style="margin: 0; font-size: 14px; line-height: 2; color: #574B47;">自分にも出来るかもと、嬉しくなりました。私はまだ自分の活動などはしていないのですが、しほさんが冒頭で話されていたように、外のお店などのLP作成などが出来るようになったら、強みになるかもと思いました😊同じようにAIを使っていても、AIぽくなくすることができることを知って、私もオシャレなものを作れるようになりたいなと思いました✨</blockquote>
+      </figure>
+      <figure data-reveal="soft" style="break-inside: avoid; margin: 0 0 16px; padding: 24px 24px 22px; border-radius: 24px; background: #fff; border: 1px solid #E8C4C0; display: flex; flex-direction: column; gap: 12px;">
+        <span style="align-self: flex-start; padding: 4px 12px; border-radius: 999px; background: #E8C4C0; color: #574B47; font-size: 11px; font-weight: 700; line-height: 1.5;">たたき台ができ、ブラッシュアップ中</span>
+        <figcaption style="font-family: 'Kanata', 'Shippori Mincho', serif; font-size: 19px; line-height: 1.5;"><span style="color: #C9A86A;">“</span>応用して色んなページを<span style="color: #C9A86A;">”</span></figcaption>
+        <blockquote style="margin: 0; font-size: 14px; line-height: 2; color: #574B47;">プロンプトの例をいただけたので、ここからさらに応用して色んなページがつくれそうと思いました！こんな簡単にサイトが作れるなんて、感動しました！</blockquote>
+      </figure>
     </div>
   </section>
 
