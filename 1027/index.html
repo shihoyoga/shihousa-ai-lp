@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10/27 講義「好き」をどうやって仕事にする？｜うさとあそ部</title>
+<meta name="description" content="10/13のお話会でいただいた85件の質問から、特に多かった「仕事づくり」をじっくり深掘り。うさとあそ部のZoom講義。部員以外の方も参加OK。アーカイブ3週間。">
+<meta property="og:title" content="10/27 講義「好き」をどうやって仕事にする？｜うさとあそ部">
+<meta property="og:description" content="自分の経験や得意を仕事に変えるまで。うさしほのZoom講義（部員以外の方も参加OK）">
+<meta property="og:image" content="https://ai.kitone.life/1027/assets/hero.jpg">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Raleway:wght@100;200&display=swap">
+<style>
+@font-face { font-family: 'Kanata'; src: url('assets/kanata.woff2') format('woff2'); font-display: swap; }
+:root { --bg:#FAF6F2; --ink:#574B47; --soft:#6B5E5A; --pink:#E8C4C0; --pink-l:#F3E3E0; --gold:#C9A86A; --gold-d:#8C6F3E; --cream:#F7EFE1; --white:#FFFDFB; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Zen Maru Gothic', sans-serif; text-wrap: pretty; line-break: strict; -webkit-font-smoothing: antialiased; }
+a { color: var(--ink); text-underline-offset: 3px; }
+img { display: block; max-width: 100%; }
+.k { font-family: 'Kanata', 'Zen Maru Gothic', serif; font-weight: 400; }
+.mk { background: linear-gradient(transparent 58%, var(--pink) 58%); padding: 0 4px; }
+.wrap { max-width: 1160px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
+.pill { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 18px 38px; border-radius: 999px; background: var(--ink); color: #fff; text-decoration: none; font-weight: 900; font-size: 17px; transition: transform .3s, box-shadow .3s, background .3s; }
+.pill:hover { background: #6B5E5A; color: #fff; transform: translateY(-3px); box-shadow: 0 10px 24px rgba(87,75,71,.22); }
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 16px; border-radius: 999px; font-size: 13px; }
+.eyebrow { display: block; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: #7E636A; }
+.h2 { margin: 12px 0 0; font-size: clamp(28px, 4vw, 42px); line-height: 1.5; }
+section { padding: clamp(72px, 9vw, 112px) 0; scroll-margin-top: 16px; }
+.center { text-align: center; }
+.card { background: #fff; border: 1px solid var(--pink); border-radius: 28px; }
+br.sp { display: none; }
+@media (max-width: 720px) { br.sp { display: inline; } }
+
+/* header */
+.nav { display: flex; align-items: center; gap: 16px; padding: 16px clamp(20px, 5vw, 64px); }
+.nav .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-size: 20px; }
+.nav .brand img { width: 52px; height: auto; }
+.nav .go { margin-left: auto; padding: 10px 22px; border-radius: 999px; background: var(--ink); color: #fff; text-decoration: none; font-weight: 900; font-size: 14px; white-space: nowrap; }
+
+/* hero */
+.hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(32px, 6vw, 72px); align-items: center; padding: clamp(24px, 5vw, 72px) 0 clamp(72px, 9vw, 112px); }
+.hero .date { display: flex; align-items: baseline; flex-wrap: wrap; gap: 12px 14px; }
+.hero .date .num { font-family: 'Raleway', sans-serif; font-weight: 100; font-size: clamp(64px, 9vw, 104px); line-height: 1; }
+.arch { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px 6px 8px; border-radius: 999px; background: #fff; border: 1.5px dashed var(--gold); font-size: 13px; line-height: 1.35; transform: rotate(-3deg); white-space: nowrap; }
+.arch .play { flex: none; width: 24px; height: 24px; border-radius: 999px; background: var(--ink); color: #fff; display: grid; place-items: center; font-size: 10px; }
+.hero h1 { margin: 22px 0 0; font-size: clamp(34px, 5vw, 58px); line-height: 1.45; }
+.hero .sub { margin: 14px 0 0; font-size: clamp(16px, 2vw, 20px); color: var(--gold-d); font-weight: 700; }
+.hero .lead { margin: 22px 0 0; font-size: 16px; line-height: 2; }
+.hero .cta { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 30px; }
+.visual { position: relative; min-height: 520px; }
+.visual .photo { position: absolute; right: 4%; top: 0; width: 70%; aspect-ratio: 3/4; border-radius: 200px 200px 28px 28px; overflow: hidden; border: 8px solid #fff; box-shadow: 0 22px 44px rgba(87,75,71,.18); transform: rotate(3deg); }
+.visual .photo img { width: 100%; height: 100%; object-fit: cover; }
+.bubble { position: absolute; padding: 12px 18px; border-radius: 20px; background: #fff; border: 1px solid var(--pink); box-shadow: 0 10px 24px rgba(87,75,71,.12); font-size: 14px; line-height: 1.6; max-width: 250px; }
+.bubble::after { content: ""; position: absolute; bottom: -9px; left: 26px; width: 16px; height: 16px; background: #fff; border-right: 1px solid var(--pink); border-bottom: 1px solid var(--pink); transform: rotate(45deg); }
+.b1 { left: 0; top: 8%; transform: rotate(-4deg); }
+.b2 { left: 6%; top: 44%; transform: rotate(3deg); background: var(--cream); }
+.b2::after { background: var(--cream); }
+.b3 { right: 0; bottom: 4%; transform: rotate(-2deg); }
+.badge { position: absolute; left: 2%; bottom: 0; width: 128px; height: 128px; border-radius: 999px; background: var(--pink); border: 4px solid var(--cream); box-shadow: 0 0 0 2px var(--gold); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; line-height: 1.3; transform: rotate(-8deg); }
+.badge .n { font-family: 'Raleway', sans-serif; font-weight: 200; font-size: 40px; line-height: 1; }
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; }
+  .visual { min-height: 0; height: 430px; order: -1; }
+  .visual .photo { width: 62%; right: 6%; }
+  .bubble { font-size: 12.5px; max-width: 200px; padding: 10px 14px; }
+  .badge { width: 104px; height: 104px; }
+  .badge .n { font-size: 32px; }
+}
+
+/* questions */
+.qs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 48px; }
+.q { padding: 32px 28px; display: flex; flex-direction: column; gap: 14px; }
+.q .mark { font-family: Georgia, serif; font-size: 64px; line-height: .6; color: var(--gold); }
+.q p { margin: 0; font-size: 18px; line-height: 1.8; }
+.big85 { display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; margin-top: 36px; }
+.big85 .n { font-family: 'Raleway', sans-serif; font-weight: 100; font-size: clamp(88px, 14vw, 150px); line-height: 1; }
+.big85 img { width: min(320px, 80vw); border-radius: 18px; border: 6px solid #fff; box-shadow: 0 16px 32px rgba(87,75,71,.16); transform: rotate(-3deg); }
+@media (max-width: 860px) { .qs { grid-template-columns: 1fr; } }
+
+/* learn */
+.learn { list-style: none; margin: 56px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.learn li { padding: clamp(28px, 4vw, 40px); display: flex; flex-direction: column; gap: 14px; }
+.learn .n { font-family: 'Raleway', sans-serif; font-weight: 100; font-size: 56px; line-height: 1; color: var(--gold); }
+.learn h3 { margin: 0; font-size: 22px; line-height: 1.6; }
+.learn p { margin: 0; font-size: 15px; line-height: 2; color: var(--soft); }
+@media (max-width: 860px) { .learn { grid-template-columns: 1fr; } }
+.work { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(28px, 5vw, 56px); align-items: center; margin-top: 56px; padding: clamp(28px, 4vw, 48px); border-radius: 32px; background: var(--pink-l); }
+.work img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 24px; }
+.work h3 { margin: 0; font-size: clamp(22px, 3vw, 28px); line-height: 1.6; }
+.work p { margin: 14px 0 0; font-size: 15px; line-height: 2; }
+@media (max-width: 860px) { .work { grid-template-columns: 1fr; } }
+
+/* for you */
+.foryou { max-width: 760px; margin: 48px auto 0; padding: 8px clamp(24px, 4vw, 40px); }
+.foryou li { list-style: none; display: flex; gap: 14px; padding: 18px 0; border-bottom: 1px solid #F3ECE6; font-size: 16px; line-height: 1.8; }
+.foryou li:last-child { border-bottom: 0; }
+.foryou li::before { content: "✦"; color: var(--gold); flex: none; }
+.foryou ul { margin: 0; padding: 0; }
+
+/* profile */
+.prof { display: grid; grid-template-columns: 260px 1fr; gap: clamp(28px, 5vw, 56px); align-items: center; max-width: 900px; margin: 48px auto 0; }
+.prof img { width: 260px; aspect-ratio: 1; object-fit: cover; border-radius: 999px; border: 8px solid #fff; box-shadow: 0 0 0 2px var(--pink); }
+.prof p { margin: 12px 0 0; font-size: 15px; line-height: 2; }
+@media (max-width: 720px) { .prof { grid-template-columns: 1fr; justify-items: center; text-align: center; } .prof img { width: 200px; } }
+
+/* details */
+.dl { max-width: 720px; margin: 48px auto 0; padding: 8px clamp(24px, 4vw, 40px); }
+.dl div { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 16px; padding: 20px 0; border-bottom: 1px solid #F3ECE6; }
+.dl div:last-child { border-bottom: 0; align-items: baseline; }
+.dl dt { font-weight: 700; font-size: 15px; }
+.dl dd { margin: 0; font-size: 15px; line-height: 1.9; }
+.dl .price { font-family: 'Raleway', sans-serif; font-weight: 100; font-size: 44px; line-height: 1; }
+@media (max-width: 520px) { .dl div { grid-template-columns: 1fr; gap: 4px; } }
+.after { max-width: 720px; margin: 36px auto 0; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; }
+
+/* faq */
+.faq { max-width: 720px; margin: 48px auto 0; display: grid; gap: 12px; }
+.faq details { border: 1px solid var(--pink); border-radius: 22px; background: #fff; padding: 0 24px; }
+.faq summary { list-style: none; cursor: pointer; display: flex; gap: 14px; align-items: center; padding: 20px 0; font-size: 17px; line-height: 1.6; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary .q { font-family: 'Raleway', sans-serif; font-weight: 200; font-size: 22px; color: var(--gold); flex: none; }
+.faq summary .plus { margin-left: auto; color: var(--gold); font-size: 22px; transition: transform .25s; flex: none; }
+.faq details[open] .plus { transform: rotate(45deg); }
+.faq .a { padding: 0 0 22px 36px; font-size: 15px; line-height: 2; color: var(--soft); }
+.faq .a p { margin: 0 0 10px; }
+
+/* apply */
+.apply { margin: clamp(24px, 4vw, 40px) 0 clamp(72px, 9vw, 112px); padding: clamp(40px, 6vw, 72px) clamp(24px, 5vw, 64px); border-radius: 36px; background: var(--pink); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 22px; }
+.apply .pill { padding: 20px 44px; font-size: 18px; border: 4px solid var(--cream); }
+
+footer { background: var(--ink); color: #FAF6F2; padding: 40px clamp(20px, 5vw, 64px); display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 28px; font-size: 13px; }
+footer a { color: #FAF6F2; }
+
+/* motion */
+.rv { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .9s cubic-bezier(.34,1.4,.64,1); }
+.rv.in { opacity: 1; transform: none; }
+@keyframes bob { 0%,100% { translate: 0 0; } 50% { translate: 0 -8px; } }
+.float { animation: bob 6s ease-in-out infinite; }
+.float.d2 { animation-delay: -2s; } .float.d3 { animation-delay: -4s; }
+@media (prefers-reduced-motion: reduce) { .rv { opacity: 1; transform: none; transition: none; } .float { animation: none; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="brand k" href="https://usatoasobu.kitone.life/"><img src="assets/wordmark.png" alt=""><span>うさとあそ部</span></a>
+  <a class="go" href="#details">申し込む</a>
+</nav>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;">
+        <span class="chip" style="background:var(--pink);font-weight:700;">うさとあそ部 Zoom講義</span>
+        <span class="chip" style="border:1px solid var(--gold);">部員以外の方も参加OK</span>
+      </div>
+      <div class="date" style="margin-top:22px;">
+        <span class="num">10.27</span>
+        <span style="font-size:16px;font-weight:700;">（火）19:30〜</span>
+        <span class="arch k"><span class="play">▶</span><span>アーカイブあり<br><span style="font-size:11px;color:#7E636A;">当日受けられなくても3週間見られる</span></span></span>
+      </div>
+      <h1 class="k">「好き」を、<br><span class="mk">どうやって仕事</span>に<br class="sp">する？</h1>
+      <p class="sub">〜自分の経験や得意を、仕事に変えるまで〜</p>
+      <p class="lead">10/13のお話会でいただいた<br class="sp"><b>85件</b>もの質問やコメント💌<br>その中から特に多かった「仕事づくり」を、<br class="sp">じっくり深掘りします🐰</p>
+      <div class="cta">
+        <a class="pill" href="https://usatoasobu.kitone.life/" target="_blank" rel="noopener">単発で参加する <span aria-hidden="true">→</span></a>
+        <a href="#learn" style="font-size:14px;">講義の内容を見る ↓</a>
+      </div>
+    </div>
+    <div class="visual" aria-hidden="false">
+      <div class="photo"><img src="assets/hero.jpg" alt="パソコンで仕事をするうさしほ"></div>
+      <div class="bubble b1 k float">好きなことを仕事にしたいけど、<br>何から始めたらいい？</div>
+      <div class="bubble b2 k float d2">自分には、<br>何ができるんだろう？</div>
+      <div class="bubble b3 k float d3">経験や得意を、どうやって<br>収入につなげればいいの？</div>
+      <div class="badge"><span class="k" style="font-size:12px;">お話会の質問</span><span class="n">85</span><span class="k" style="font-size:12px;">件から</span></div>
+    </div>
+  </div>
+
+  <!-- WHY -->
+  <section id="why">
+    <div class="center rv">
+      <span class="eyebrow">Why this theme</span>
+      <h2 class="h2 k">いちばん多かった声は、<br class="sp"><span class="mk">「仕事づくり」</span>でした</h2>
+      <p style="margin:16px 0 0;font-size:16px;line-height:2;">10/13のお話会「“自分らしい”働き方と生き方」で<br>たくさんの質問やコメントをいただきました。</p>
+    </div>
+    <div class="big85 rv">
+      <img src="assets/talk.jpg" alt="10/13のお話会のサムネイル">
+      <div class="center"><span class="n">85</span><span class="k" style="font-size:28px;">件</span><p class="k" style="margin:4px 0 0;font-size:18px;">の質問・コメント💌</p></div>
+    </div>
+    <div class="qs">
+      <div class="q card rv"><span class="mark">“</span><p class="k">好きなことを仕事にしたいけど、何から始めたらいいかわからない</p></div>
+      <div class="q card rv"><span class="mark">“</span><p class="k">自分には、何ができるんだろう？</p></div>
+      <div class="q card rv"><span class="mark">“</span><p class="k">経験や得意を、どうやって収入につなげればいいの？</p></div>
+    </div>
+  </section>
+
+  <!-- LEARN -->
+  <section id="learn">
+    <div class="center rv">
+      <span class="eyebrow">What you learn</span>
+      <h2 class="h2 k">講義でお伝えすること</h2>
+      <p style="margin:16px 0 0;font-size:16px;line-height:2;">わたし自身の経験も交えながら、<br class="sp">具体的にお話しします🗣️</p>
+    </div>
+    <ol class="learn">
+      <li class="card rv"><span class="n">01</span><h3 class="k"><span class="mk">うさしほの実体験</span>から</h3><p>会社員から独立して、「好き」や経験をどうやって仕事にしてきたのか。うまくいったことも、遠回りしたことも、具体的にシェアします。</p></li>
+      <li class="card rv"><span class="n">02</span><h3 class="k"><span class="mk">ワークと対話</span>で整理</h3><p>聞くだけで終わらせず、ワークや対話をしながら、あなたの経験・得意・好きを一緒に整理していきます。</p></li>
+      <li class="card rv"><span class="n">03</span><h3 class="k">次の<span class="mk">一歩</span>を考える</h3><p>自分の可能性を整理したうえで、「明日からできる小さな一歩」を考える時間にします☺️</p></li>
+    </ol>
+    <div class="work rv">
+      <img src="assets/work.jpg" alt="ノートに書き出す手元">
+      <div>
+        <span class="eyebrow">Work &amp; Talk</span>
+        <h3 class="k" style="margin-top:8px;">聞くだけじゃない、<br>参加型のZoom講義</h3>
+        <p>リアルタイムでの参加・画面ONがおすすめです。<br>当日参加できなくても、アーカイブで3週間ご覧いただけます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR YOU -->
+  <section id="foryou">
+    <div class="center rv">
+      <span class="eyebrow">For you</span>
+      <h2 class="h2 k">こんな方へ</h2>
+    </div>
+    <div class="foryou card rv">
+      <ul>
+        <li>好きなことを仕事にしたいけど、何から始めたらいいかわからない方</li>
+        <li>「自分には何ができるんだろう？」と感じている方</li>
+        <li>自分の経験や得意を、収入につなげたい方</li>
+        <li>会社員だけど、いつか自分の仕事をつくってみたい方</li>
+        <li>10/13のお話会を聞いて、もっと深めたいと思った方</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROFILE -->
+  <section id="profile">
+    <div class="center rv">
+      <span class="eyebrow">Profile</span>
+      <h2 class="h2 k">講師｜うさしほ</h2>
+    </div>
+    <div class="prof rv">
+      <img src="assets/profile.jpg" alt="うさしほ">
+      <div>
+        <p class="k" style="margin:0;font-size:26px;">うさしほ</p>
+        <p style="margin-top:4px;font-size:14px;color:var(--soft);">合同会社Kitone 代表 ／ うさとあそ部 主宰<br>千早赤阪村（大阪唯一の村）在住</p>
+        <p>新卒で大手ヨガスタジオに勤務したのち、2022年に脱サラ・独立。インスタグラムでの発信をきっかけに2023年に法人化。旅をしながら、PC1台で自由に働く暮らしを続けています。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILS -->
+  <section id="details">
+    <div class="center rv">
+      <span class="eyebrow">Details</span>
+      <h2 class="h2 k">開催概要</h2>
+    </div>
+    <dl class="dl card rv">
+      <div><dt>日時</dt><dd>2026年10月27日（火）19:30〜</dd></div>
+      <div><dt>場所</dt><dd>Zoom（オンライン）</dd></div>
+      <div><dt>テーマ</dt><dd>「好き」をどうやって仕事にする？<br><span style="font-size:13px;">〜自分の経験や得意を仕事に変えるまで〜</span></dd></div>
+      <div><dt>参加方法</dt><dd><span class="mk">リアルタイム・画面ONでの参加がおすすめ</span><br>ワークや対話の時間があります</dd></div>
+      <div><dt>アーカイブ</dt><dd>3週間ご視聴いただけます<br>当日参加できなくても大丈夫です</dd></div>
+      <div><dt>参加費</dt><dd>単発 <span class="price">5,500</span>円<br><span style="font-size:13px;">※ うさとあそ部の部員は、月額内でご参加いただけます</span></dd></div>
+    </dl>
+    <div class="after rv">
+      <a class="pill" href="https://usatoasobu.kitone.life/" target="_blank" rel="noopener">単発で参加する <span aria-hidden="true">→</span></a>
+      <a href="https://usatoasobu.kitone.life/" style="font-size:14px;">うさとあそ部に入部して参加する方はこちら →</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="padding-bottom:clamp(24px,4vw,40px);">
+    <div class="center rv">
+      <span class="eyebrow">Q&amp;A</span>
+      <h2 class="h2 k">よくあるご質問</h2>
+    </div>
+    <div class="faq">
+      <details class="rv"><summary><span class="q">Q</span><span>まだ何も仕事にしていなくても大丈夫？</span><span class="plus">＋</span></summary><div class="a"><p>もちろん大丈夫です。「好きなことはあるけど、何から始めたらいいかわからない」という方にこそ聞いてほしい内容です🐰</p></div></details>
+      <details class="rv"><summary><span class="q">Q</span><span>当日参加できなくても大丈夫？</span><span class="plus">＋</span></summary><div class="a"><p>アーカイブを3週間ご覧いただけます。ただ、ワークや対話の時間があるので、できればリアルタイムでの参加がおすすめです。</p></div></details>
+      <details class="rv"><summary><span class="q">Q</span><span>10/13のお話会を見ていなくても参加できる？</span><span class="plus">＋</span></summary><div class="a"><p>はい、参加できます。お話会の内容を知らなくてもわかるようにお話しします。</p></div></details>
+      <details class="rv"><summary><span class="q">Q</span><span>うさとあそ部の部員も申し込みが必要？</span><span class="plus">＋</span></summary><div class="a"><p>部員の方は月額内でご参加いただけます。単発のお申し込みは不要です。</p></div></details>
+      <details class="rv"><summary><span class="q">Q</span><span>単発受講と、うさとあそ部に入部するのはどう違う？</span><span class="plus">＋</span></summary><div class="a">
+        <p><b>単発受講（5,500円）</b><br>この講義だけに参加できます。アーカイブ3週間。</p>
+        <p><b>うさとあそ部に入部（月額5,500円＋決済手数料5%）</b><br>この講義に加えて、10/30のグループコンサル（質問会）や過去のアーカイブも見放題。部員さん同士のつながりもあります。入部特典「うさしほの一問一答 完全版49問」つき。入部は募集期間（10/15〜10/27）のみ受付です。</p>
+        <p>「まずはこの回だけ」なら単発、「続けて学びたい」なら入部がおすすめです🐰<br><a href="https://usatoasobu.kitone.life/">うさとあそ部について詳しく見る →</a></p>
+      </div></details>
+    </div>
+  </section>
+
+  <!-- APPLY -->
+  <div class="apply rv">
+    <p class="k" style="margin:0;font-size:clamp(24px,3.4vw,36px);line-height:1.6;">あなたの「好き」も、<br>きっと誰かの役に立つ。</p>
+    <p style="margin:0;font-size:15px;line-height:2;">10月27日（火）19:30〜 ｜ Zoom ｜ アーカイブ3週間</p>
+    <a class="pill" href="https://usatoasobu.kitone.life/" target="_blank" rel="noopener">単発で参加する <span aria-hidden="true">→</span></a>
+    <a href="https://usatoasobu.kitone.life/" style="font-size:14px;">うさとあそ部に入部して参加する方はこちら →</a>
+  </div>
+
+</main>
+
+<footer>
+  <a href="https://usatoasobu.kitone.life/tokushoho.html">特定商取引法に基づく表記</a>
+  <a href="https://usatoasobu.kitone.life/privacy.html">プライバシーポリシー</a>
+  <span>© Kitone LLC</span>
+</footer>
+
+<script>
+(function () {
+  var els = document.querySelectorAll('.rv');
+  if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function (e) { io.observe(e); });
+})();
+</script>
+</body>
+</html>
