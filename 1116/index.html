@@ -138,16 +138,17 @@ main [style*="border: 1.5px solid #E8C4C0"], main [style*="border: 2px solid #E8
 /* ===== スマホ優先レイアウト ===== */
 @media (max-width: 720px) {
   section[data-screen-label="Hero"] > div:first-child { gap: 18px !important; }
-  section[data-screen-label="Hero"] > div:first-child > :nth-child(4) { order: 1; }
-  section[data-screen-label="Hero"] > div:first-child > :nth-child(2) { order: 2; }
-  section[data-screen-label="Hero"] > div:first-child > :nth-child(3) { order: 3; }
-  section[data-screen-label="Hero"] > div:first-child > :nth-child(1) { order: 4; }
-  section[data-screen-label="Hero"] > div:first-child > :nth-child(5) { order: 5; }
   section[data-screen-label="Hero"] a[data-pill][href="https://usatoasobu.kitone.life/"] > span:first-child { font-size: 17px !important; }
-  section[data-screen-label="Hero"] > div:first-child > :nth-child(n+6) { order: 6; }
   [data-sp-visual] [data-a="intro"], [data-sp-visual] > div:has(> [data-a="drop"]) { display: none !important; }
   [data-hero-visual] { display: none !important; }
   section[data-screen-label="Hero"] h1 { font-size: clamp(28px, 8.2vw, 34px) !important; }
+}
+
+@media (max-width: 720px) {
+  [data-sp-hero] { display: block !important; order: 0 !important; }
+  section[data-screen-label="Hero"] > div:first-child > :is([data-sp-visual], h1) { display: none !important; }
+  section[data-screen-label="Hero"] > div:first-child > :is(:nth-child(3), :nth-child(4), :nth-child(8)) { display: none !important; }
+  section[data-screen-label="Hero"] { padding-top: 0 !important; }
 }
 </style>
 </helmet>
@@ -187,6 +188,28 @@ main [style*="border: 1.5px solid #E8C4C0"], main [style*="border: 2px solid #E8
 
   <section data-screen-label="Hero" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: clamp(40px, 6vw, 80px); align-items: center; padding: clamp(40px, 6vw, 88px) 0 clamp(72px, 9vw, 120px);">
     <div style="display: flex; flex-direction: column; gap: 28px;">
+      <div data-sp-hero="" style="display: none; position: relative; margin: 0 calc(50% - 50vw); padding: 18px 20px 26px; overflow: hidden;">
+        <span aria-hidden="true" style="position:absolute;left:-60px;top:120px;width:220px;height:220px;border-radius:50%;background:#F2CFC9;opacity:.55;filter:blur(18px);"></span>
+        <span aria-hidden="true" style="position:absolute;right:-70px;top:330px;width:240px;height:240px;border-radius:50%;background:#CFDCC4;opacity:.75;filter:blur(20px);"></span>
+        <span aria-hidden="true" style="position:absolute;left:40%;top:-40px;width:160px;height:160px;border-radius:50%;background:#F3E3C7;opacity:.6;filter:blur(20px);"></span>
+        <div style="position: relative; text-align: center;">
+          <p style="margin: 0; font-family: 'Caveat', cursive; font-weight: 700; font-size: 30px; line-height: 1; color: #B9706A; rotate: -4deg;">Website Lesson vol.2 <span style="color:#574B47;">11.16</span></p>
+          <p style="margin: 14px 0 0;"><span style="display:inline-block; padding: 4px 16px; font-family: 'Kanata', 'Kanata2', 'Shippori Mincho', serif; font-weight: 700; font-size: 14px; color: #5D7A55; background: #E4EADC; border: 2px solid #574B47; border-radius: 20px 12px 18px 14px / 14px 18px 12px 20px;">AIでおしゃれなLPをつくる講座 第2弾</span></p>
+          <p role="heading" aria-level="1" style="margin: 14px 0 0; font-family: 'Kanata', 'Kanata2', 'Shippori Mincho', serif; font-size: clamp(30px, 8.6vw, 36px); line-height: 1.45; letter-spacing: .03em;">「作れた！」から<br><span style="background: linear-gradient(transparent 62%, #E8C4C0 62%); padding: 0 2px;">「使えるサイト！」</span>へ</p>
+        </div>
+        <div style="position: relative; height: 430px; margin-top: 18px;">
+          <svg viewBox="0 0 24 24" width="30" aria-hidden="true" style="position:absolute;left:2%;top:4px;"><path filter="url(#usa-hand)" d="M12 2c1 6 3 8 9 10-6 2-8 4-9 10-1-6-3-8-9-10 6-2 8-4 9-10z" fill="#F3D9A8" stroke="#D9A66A" stroke-width="1.6"/></svg><svg viewBox="0 0 24 24" width="20" aria-hidden="true" style="position:absolute;right:4%;top:150px;"><path filter="url(#usa-hand)" d="M12 2c1 6 3 8 9 10-6 2-8 4-9 10-1-6-3-8-9-10 6-2 8-4 9-10z" fill="#F2CFC9" stroke="#D99A92" stroke-width="1.6"/></svg><svg viewBox="0 0 24 24" width="22" aria-hidden="true" style="position:absolute;left:44%;bottom:6px;"><path filter="url(#usa-hand)" d="M12 2c1 6 3 8 9 10-6 2-8 4-9 10-1-6-3-8-9-10 6-2 8-4 9-10z" fill="#CFDCC4" stroke="#7E9472" stroke-width="1.6"/></svg>
+          <div style="position:absolute;left:2%;top:26px;width:70%;rotate:-6deg;border:2.5px solid #574B47;border-radius:16px 10px 14px 12px / 12px 14px 10px 16px;overflow:hidden;background:#fff;box-shadow:5px 6px 0 rgba(87,75,71,.15);"><span aria-hidden="true" style="position:absolute;left:50%;top:-8px;translate:-50% 0;rotate:4deg;width:70px;height:20px;background:repeating-linear-gradient(45deg,rgba(232,196,192,.9) 0 6px,rgba(255,255,255,.35) 6px 12px);opacity:.92;z-index:4;"></span><img src="thumb.jpg" alt="講座のサムネイル" style="display:block;width:100%;height:auto;"></div>
+          <div style="position:absolute;right:4%;top:92px;width:46%;aspect-ratio:9/19;rotate:5deg;border:5px solid #574B47;border-radius:30px 24px 28px 26px / 26px 30px 24px 28px;overflow:hidden;background:#fff;box-shadow:0 16px 34px rgba(87,75,71,.28);z-index:2;"><img src="yururi-sp.jpg" alt="講義中につくった古民家サロン ゆるりのサイト" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;"></div>
+          <div style="position:absolute;left:4%;top:190px;width:42%;rotate:-8deg;border:2.5px solid #574B47;border-radius:12px 8px 12px 10px;overflow:hidden;background:#fff;box-shadow:4px 5px 0 rgba(87,75,71,.15);z-index:3;"><span aria-hidden="true" style="position:absolute;left:50%;top:-8px;translate:-50% 0;rotate:-6deg;width:56px;width:70px;height:20px;background:repeating-linear-gradient(45deg,rgba(207,220,196,.95) 0 6px,rgba(255,255,255,.35) 6px 12px);opacity:.92;z-index:4;"></span><img src="yururi/feed-1.jpg" alt="ゆるりのインスタ投稿" style="display:block;width:100%;height:auto;"></div>
+          <div style="position:absolute;right:-2%;top:6px;width:112px;aspect-ratio:1;border-radius:50%;background:#F6E7E3;border:2.5px solid #574B47;display:flex;flex-direction:column;align-items:center;justify-content:center;rotate:10deg;z-index:5;box-shadow:3px 4px 0 rgba(87,75,71,.15);text-align:center;"><span style="font-family:'Caveat',cursive;font-weight:700;font-size:22px;line-height:1;color:#B9706A;">Step up!</span><span style="font-family: 'Kanata', 'Kanata2', 'Shippori Mincho', serif; font-size:11px;line-height:1.5;margin-top:4px;">第1弾も第2弾も<br>どっちも見られる</span></div>
+          <div style="position:absolute;left:6%;bottom:4px;z-index:5;rotate:-4deg;background:#574B47;color:#fff;padding:10px 16px 8px;border-radius:20px 12px 18px 14px / 14px 18px 12px 20px;box-shadow:3px 4px 0 #E8C4C0;display:flex;align-items:baseline;gap:6px;"><span style="font-family:'Caveat',cursive;font-weight:700;font-size:30px;line-height:1;">11.21</span><span style="font-size:12px;font-weight:700;line-height:1.4;">（土）まで<br>入部受付中🐰</span></div>
+        </div>
+        <div style="position: relative; margin-top: 22px; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+          <a href="https://usatoasobu.kitone.life/" target="_blank" rel="noopener" data-pill="" style="display: inline-flex; justify-content: center; width: 100%; max-width: 340px; box-sizing: border-box; padding: 18px 20px; background: #574B47; color: #fff; text-decoration: none; font-weight: 900; font-size: 17px; white-space: nowrap;">うさとあそ部に入部して見る →</a>
+          <p style="margin: 0; font-size: 12px; font-weight: 700;">11/16開催の講義をアーカイブ動画で🐰</p>
+        </div>
+      </div>
       <div data-sp-visual="" style="display: none; margin: 0 0 4px;">
         <div data-a="intro" style="text-align: center; margin: 0 0 18px; display: flex; flex-direction: column; align-items: center; gap: 10px;">
           <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px;">
