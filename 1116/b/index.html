@@ -142,7 +142,14 @@ main section[id]:nth-of-type(even):not(#apply)::before { content: ""; position: 
 #voices::before { background: #E4EADC !important; }
 #details::before { background: #F6E7E3 !important; }
 main [style*="border: 1px solid #E8C4C0"] { box-shadow: none !important; background-clip: padding-box; }
-@media (max-width: 640px) { [data-b-chips] { display: none !important; } #top > svg { display: none; } }
+@media (max-width: 640px) { #top > svg { display: none; } }
+
+@media (max-width: 640px) {
+  [data-b-chips] { display: flex !important; position: absolute !important; left: 0 !important; right: 0; top: auto !important; bottom: 18px; flex-direction: row !important; flex-wrap: wrap; justify-content: center; gap: 8px !important; padding: 0 12px; }
+  [data-b-chips] > span { font-size: 12px !important; padding: 5px 12px !important; }
+  #top > div:last-of-type > div { height: 560px !important; }
+  #top > div:last-of-type > div > div[style*="border-radius: 50%"] { width: 132px !important; top: auto !important; bottom: 124px; right: 4px !important; } #top > div:last-of-type > div > div[style*="border-radius: 50%"] > span:last-child { font-size: 12px !important; }
+}
 </style>
 </helmet>
 

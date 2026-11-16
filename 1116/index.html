@@ -134,6 +134,21 @@ footer { margin-top: 40px; }
 main [style*="border-radius: 2"]:not(a):not(img):not([data-frame]):not(details):not(li) { border-radius: 30px 16px 28px 18px / 18px 28px 16px 30px !important; }
 main [style*="border-radius: 2"][style*="background: #F3ECE6"], main [style*="border-radius: 2"][style*="background: #E4EADC"], main [style*="border-radius: 2"][style*="background: #E8C4C0"]:not(a) { border: 1.8px solid #574B47 !important; }
 main [style*="border: 1.5px solid #E8C4C0"], main [style*="border: 2px solid #E8C4C0"] { border: 1.8px solid #574B47 !important; box-shadow: 4px 5px 0 #D3C7BB; }
+
+/* ===== スマホ優先レイアウト ===== */
+@media (max-width: 720px) {
+  section[data-screen-label="Hero"] > div:first-child { gap: 18px !important; }
+  section[data-screen-label="Hero"] > div:first-child > :nth-child(4) { order: 1; }
+  section[data-screen-label="Hero"] > div:first-child > :nth-child(2) { order: 2; }
+  section[data-screen-label="Hero"] > div:first-child > :nth-child(3) { order: 3; }
+  section[data-screen-label="Hero"] > div:first-child > :nth-child(1) { order: 4; }
+  section[data-screen-label="Hero"] > div:first-child > :nth-child(5) { order: 5; }
+  section[data-screen-label="Hero"] a[data-pill][href="https://usatoasobu.kitone.life/"] > span:first-child { font-size: 17px !important; }
+  section[data-screen-label="Hero"] > div:first-child > :nth-child(n+6) { order: 6; }
+  [data-sp-visual] [data-a="intro"], [data-sp-visual] > div:has(> [data-a="drop"]) { display: none !important; }
+  [data-hero-visual] { display: none !important; }
+  section[data-screen-label="Hero"] h1 { font-size: clamp(28px, 8.2vw, 34px) !important; }
+}
 </style>
 </helmet>
 
