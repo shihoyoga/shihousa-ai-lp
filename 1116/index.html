@@ -120,6 +120,19 @@ main [style*="background: #574B47"][style*="border-radius: 28px"] { border-radiu
 /* 手描き風アイコン */
 [data-scroll-cue] { border: 1.6px solid #6B4A3A !important; border-radius: 30px 22px 28px 20px / 22px 30px 20px 28px !important; font-family: 'Caveat', cursive !important; font-size: 17px !important; letter-spacing: .04em !important; }
 [data-scroll-cue] > span[aria-hidden]:not([data-cue-arrow]) { border-radius: 10px 8px 11px 9px / 12px 10px 13px 11px !important; border-width: 1.8px !important; }
+
+/* 全体ブラッシュアップ */
+#apply { border-radius: 46px 18px 40px 22px / 22px 40px 18px 46px !important; border: 2px solid #574B47 !important; box-shadow: 8px 9px 0 #E8C4C0 !important; }
+main a[data-pill][style*="background: #574B47"] { border: 2px solid #574B47 !important; border-radius: 30px 18px 28px 20px / 20px 28px 18px 30px !important; box-shadow: 4px 5px 0 #E8C4C0; }
+main a[data-pill][style*="background: #E8C4C0"] { border: 2px solid #574B47 !important; border-radius: 30px 18px 28px 20px / 20px 28px 18px 30px !important; box-shadow: 4px 5px 0 #574B47; }
+[data-work] { position: relative; }
+[data-work]::before { content: ""; position: absolute; z-index: 3; top: -12px; left: 50%; width: 92px; height: 24px; translate: -50% 0; rotate: -3deg; background: repeating-linear-gradient(45deg, rgba(232,196,192,.85) 0 6px, rgba(242,215,211,.85) 6px 12px); border-left: 2px dotted rgba(255,255,255,.7); border-right: 2px dotted rgba(255,255,255,.7); }
+[data-work]:nth-of-type(even)::before { rotate: 4deg; background: repeating-linear-gradient(45deg, rgba(207,220,196,.9) 0 6px, rgba(228,234,220,.9) 6px 12px); }
+footer { margin-top: 40px; }
+
+main [style*="border-radius: 2"]:not(a):not(img):not([data-frame]):not(details):not(li) { border-radius: 30px 16px 28px 18px / 18px 28px 16px 30px !important; }
+main [style*="border-radius: 2"][style*="background: #F3ECE6"], main [style*="border-radius: 2"][style*="background: #E4EADC"], main [style*="border-radius: 2"][style*="background: #E8C4C0"]:not(a) { border: 1.8px solid #574B47 !important; }
+main [style*="border: 1.5px solid #E8C4C0"], main [style*="border: 2px solid #E8C4C0"] { border: 1.8px solid #574B47 !important; box-shadow: 4px 5px 0 #E8C4C0; }
 </style>
 </helmet>
 
@@ -578,15 +591,26 @@ main [style*="background: #574B47"][style*="border-radius: 28px"] { border-radiu
     </div>
   </section>
 
-  <section id="apply" data-screen-label="Apply" style="margin: clamp(40px, 6vw, 72px) 0 clamp(72px, 9vw, 112px); padding: clamp(40px, 6vw, 72px) clamp(24px, 5vw, 64px); border-radius: 36px; background: #E8C4C0; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 22px; scroll-margin-top: 24px;">
-    <p style="margin: 0; font-family: 'Kanata', 'Kanata2', 'Shippori Mincho', serif; font-size: clamp(24px, 3.4vw, 36px); line-height: 1.6;">一緒に作ろ〜🐰</p>
-    <p style="margin: 0; font-size: 15px; line-height: 2;">うさとあそ部に入部すると、第1弾・第2弾ともに動画で受講できます ｜ 入部は11/21（土）まで</p>
-    <a href="https://usatoasobu.kitone.life/" target="_blank" rel="noopener" data-pill="" style="display: inline-flex; align-items: center; gap: 12px; padding: 20px 44px; border-radius: 999px; background: #574B47; color: #fff; text-decoration: none; font-weight: 900; font-size: 18px; border: 4px solid #E4EADC;">うさとあそ部に入部する</a>
-    <a href="https://usatoasobu.kitone.life/#trial" target="_blank" rel="noopener" style="font-size: 15px; font-weight: 700;">まずは無料のおためし会員から<br>のぞいてみる方はこちら →</a>
+  <section id="apply" data-screen-label="Apply" style="position: relative; margin: clamp(40px, 6vw, 72px) 0 clamp(72px, 9vw, 112px); padding: clamp(36px, 6vw, 64px) clamp(22px, 5vw, 64px); background: #FBF8F3; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 18px; scroll-margin-top: 24px;">
+    <svg viewBox="0 0 24 24" width="26" aria-hidden="true" style="position:absolute;left:7%;top:12%;"><g filter="url(#usa-hand)" stroke="#574B47" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 6 3 8 9 10-6 2-8 4-9 10-1-6-3-8-9-10 6-2 8-4 9-10z" fill="#F3D9A8" stroke="#D9A66A"/></g></svg>
+    <svg viewBox="0 0 24 24" width="26" aria-hidden="true" style="position:absolute;right:9%;top:22%;width:18px;"><g filter="url(#usa-hand)" stroke="#574B47" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 6 3 8 9 10-6 2-8 4-9 10-1-6-3-8-9-10 6-2 8-4 9-10z" fill="#F2CFC9" stroke="#D99A92"/></g></svg>
+    <svg viewBox="0 0 40 40" width="40" aria-hidden="true" style="position:absolute;right:6%;top:52%;"><g filter="url(#usa-hand)" stroke="#574B47" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 36V18" fill="none" stroke="#7E9472"/><path d="M20 26c-7 0-11-5-11-12 7 0 11 5 11 12zM20 21c0-7 4-12 12-12 0 7-4 12-12 12z" fill="#CFDCC4" stroke="#7E9472"/></g></svg>
+    <svg viewBox="0 0 24 24" width="24" aria-hidden="true" style="position:absolute;left:7%;top:44%;rotate:-12deg;"><g filter="url(#usa-hand)" stroke="#574B47" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20C5 15 2 11 3 7c1-4 6-5 9 0 3-5 8-4 9 0 1 4-2 8-9 13z" fill="#F2CFC9" stroke="#D99A92"/></g></svg>
+    <svg viewBox="0 0 120 110" width="104" aria-hidden="true" style="display:block;margin:0 auto -6px;overflow:visible"><g filter="url(#usa-hand)" stroke="#574B47" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M44 46C36 30 34 8 42 6s12 20 10 38M76 46c8-16 10-38 2-40s-12 20-10 38" fill="#FBF8F3"/><path d="M44 38c-3-8-4-18-2-25M76 38c3-8 4-18 2-25" fill="none" stroke="#E8A9A1" stroke-width="3"/><path d="M60 104c-24 0-36-12-36-30s15-30 36-30 36 12 36 30-12 30-36 30z" fill="#FBF8F3"/><path d="M46 72q3-4 6 0M68 72q3-4 6 0" fill="none"/><path d="M34 82h7M79 82h7" fill="none" stroke="#E8A9A1" stroke-width="3.4"/><path d="M55 84q5 4 10 0" fill="none"/><path d="M98 30c1 6 3 8 9 9-6 1-8 3-9 9-1-6-3-8-9-9 6-1 8-3 9-9z" fill="#F3D9A8" stroke="#D9A66A"/><path d="M14 52c-3-2-6 0-5 3 1 4 6 6 6 6s5-2 6-6c1-3-2-5-5-3" fill="#F2CFC9" stroke="#D99A92"/></g></svg>
+    <p style="margin: 0; font-family: 'Caveat', cursive; font-weight: 600; font-size: 24px; line-height: 1; color: #B9706A; rotate: -3deg;">let's make it together ♡</p>
+    <div><p style="margin: 0; font-family: 'Kanata', 'Kanata2', 'Shippori Mincho', serif; font-size: clamp(30px, 4.4vw, 46px); line-height: 1.4;">一緒に作ろ〜</p><svg viewBox="0 0 220 14" width="200" height="14" aria-hidden="true" style="display:block;margin:2px auto 0;overflow:visible"><path filter="url(#usa-hand)" d="M4 8c20-6 34 5 54 0s34-6 54 0 34 5 54 0 30-5 50-1" fill="none" stroke="#D99A92" stroke-width="3" stroke-linecap="round"/></svg></div>
+    <p style="margin: 0; font-size: 15px; line-height: 2;">うさとあそ部に入部すると、<br data-sp-br=""><b style="background: linear-gradient(transparent 58%, #E8C4C0 58%); padding: 0 2px;">第1弾も第2弾も、どっちも</b>アーカイブ動画で見られます🐰</p>
+    <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+      <li style="padding: 6px 16px; background: #E4EADC; color: #5D7A55; font-weight: 700; font-size: 14px; border: 1.8px solid #574B47; border-radius: 20px 12px 18px 14px / 14px 18px 12px 20px;">第1弾＋第2弾</li>
+      <li style="padding: 6px 16px; background: #fff; font-weight: 700; font-size: 14px; border: 1.8px solid #574B47; border-radius: 12px 20px 14px 18px / 18px 14px 20px 12px;">解約するまで何度でも</li>
+      <li style="padding: 6px 16px; background: #F6E7E3; font-weight: 700; font-size: 14px; border: 1.8px solid #574B47; border-radius: 18px 14px 20px 12px / 12px 20px 14px 18px;">入部は11/21（土）まで</li>
+    </ul>
+    <a href="https://usatoasobu.kitone.life/" target="_blank" rel="noopener" data-pill="" style="margin-top: 6px; display: inline-flex; align-items: center; gap: 12px; padding: 20px clamp(26px, 5vw, 44px); white-space: nowrap; background: #574B47; color: #fff; text-decoration: none; font-weight: 900; font-size: 18px;">うさとあそ部に入部する →</a>
+    <a href="https://usatoasobu.kitone.life/#trial" target="_blank" rel="noopener" style="font-size: 14px; font-weight: 700;">まずは無料のおためし会員から<br>のぞいてみる方はこちら →</a>
   </section>
 </main>
 
-<footer style="background: #574B47; color: #FBF8F3; padding: 40px clamp(20px, 5vw, 72px); display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 28px; font-size: 13px;">
+<footer style="position: relative; background: #574B47; color: #FBF8F3; padding: 40px clamp(20px, 5vw, 72px); display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 28px; font-size: 13px;"><svg viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true" style="position:absolute;left:0;top:-39px;width:100%;height:40px;display:block"><path d="M0 40V22C120 6 240 6 360 20s240 18 360 4 240-22 360-6 240 16 360 2V40z" fill="#574B47"/></svg>
   <a href="https://usatoasobu.kitone.life/tokushoho.html" style="color: #FBF8F3;">特定商取引法に基づく表記</a>
   <a href="https://usatoasobu.kitone.life/privacy.html" style="color: #FBF8F3;">プライバシーポリシー</a>
   <span>© Kitone LLC</span>
