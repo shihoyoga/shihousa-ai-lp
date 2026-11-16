@@ -110,11 +110,11 @@ main section[id]::after { content: ""; position: absolute; z-index: -1; width: c
 #voices::before, #details::before { content: ""; position: absolute; z-index: -2; top: 0; bottom: 0; left: calc(50% - 50vw); right: calc(50% - 50vw); background: #DCE4D1;
   -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%201440%2040%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M0%2040V22C120%206%20240%206%20360%2020s240%2018%20360%204%20240-22%20360-6%20240%2016%20360%202V40z%22/%3E%3C/svg%3E") top / 100% 40px no-repeat, linear-gradient(#000, #000) center / 100% calc(100% - 78px) no-repeat, url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%201440%2040%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M0%200v18c120%2016%20240%2016%20360%202s240-18%20360-4%20240%2022%20360%206%20240-16%20360-2V0z%22/%3E%3C/svg%3E") bottom / 100% 40px no-repeat;
   mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%201440%2040%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M0%2040V22C120%206%20240%206%20360%2020s240%2018%20360%204%20240-22%20360-6%20240%2016%20360%202V40z%22/%3E%3C/svg%3E") top / 100% 40px no-repeat, linear-gradient(#000, #000) center / 100% calc(100% - 78px) no-repeat, url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%201440%2040%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M0%200v18c120%2016%20240%2016%20360%202s240-18%20360-4%20240%2022%20360%206%20240-16%20360-2V0z%22/%3E%3C/svg%3E") bottom / 100% 40px no-repeat; }
-#details::before { background: #F6E7E3; }
+#details::before { background: #F8F4EC; }
 /* 手書き風の枠 */
-main [style*="border: 1px solid #E8C4C0"] { border: 1.8px solid #6B4A3A !important; border-radius: 26px 12px 24px 14px / 14px 24px 12px 26px !important; box-shadow: 4px 5px 0 #E8C4C0; }
-main details[style*="border: 1px solid #E8C4C0"] { box-shadow: 3px 4px 0 #F3E1DD; }
-main [style*="background: #574B47"][style*="border-radius: 28px"] { border-radius: 34px 14px 30px 16px / 16px 30px 14px 34px !important; box-shadow: 6px 7px 0 #E8C4C0; }
+main [style*="border: 1px solid #E8C4C0"] { border: 1.8px solid #6B4A3A !important; border-radius: 26px 12px 24px 14px / 14px 24px 12px 26px !important; box-shadow: 4px 5px 0 #D3C7BB; }
+main details[style*="border: 1px solid #E8C4C0"] { box-shadow: 3px 4px 0 #DDD3C7; }
+main [style*="background: #574B47"][style*="border-radius: 28px"] { border-radius: 34px 14px 30px 16px / 16px 30px 14px 34px !important; box-shadow: 6px 7px 0 #D3C7BB; }
 #apply { border-radius: 46px 18px 40px 22px / 22px 40px 18px 46px !important; border: 2px solid #6B4A3A; box-shadow: 7px 8px 0 #E4EADC, 7px 8px 0 2px #6B4A3A; }
 
 /* 手描き風アイコン */
@@ -123,7 +123,7 @@ main [style*="background: #574B47"][style*="border-radius: 28px"] { border-radiu
 
 /* 全体ブラッシュアップ */
 #apply { border-radius: 46px 18px 40px 22px / 22px 40px 18px 46px !important; border: 2px solid #574B47 !important; box-shadow: 8px 9px 0 #E8C4C0 !important; }
-main a[data-pill][style*="background: #574B47"] { border: 2px solid #574B47 !important; border-radius: 30px 18px 28px 20px / 20px 28px 18px 30px !important; box-shadow: 4px 5px 0 #E8C4C0; }
+main a[data-pill][style*="background: #574B47"] { border: 2px solid #574B47 !important; border-radius: 30px 18px 28px 20px / 20px 28px 18px 30px !important; box-shadow: 4px 5px 0 #D3C7BB; }
 main a[data-pill][style*="background: #E8C4C0"] { border: 2px solid #574B47 !important; border-radius: 30px 18px 28px 20px / 20px 28px 18px 30px !important; box-shadow: 4px 5px 0 #574B47; }
 [data-work] { position: relative; }
 [data-work]::before { content: ""; position: absolute; z-index: 3; top: -12px; left: 50%; width: 92px; height: 24px; translate: -50% 0; rotate: -3deg; background: repeating-linear-gradient(45deg, rgba(232,196,192,.85) 0 6px, rgba(242,215,211,.85) 6px 12px); border-left: 2px dotted rgba(255,255,255,.7); border-right: 2px dotted rgba(255,255,255,.7); }
@@ -132,7 +132,7 @@ footer { margin-top: 40px; }
 
 main [style*="border-radius: 2"]:not(a):not(img):not([data-frame]):not(details):not(li) { border-radius: 30px 16px 28px 18px / 18px 28px 16px 30px !important; }
 main [style*="border-radius: 2"][style*="background: #F3ECE6"], main [style*="border-radius: 2"][style*="background: #E4EADC"], main [style*="border-radius: 2"][style*="background: #E8C4C0"]:not(a) { border: 1.8px solid #574B47 !important; }
-main [style*="border: 1.5px solid #E8C4C0"], main [style*="border: 2px solid #E8C4C0"] { border: 1.8px solid #574B47 !important; box-shadow: 4px 5px 0 #E8C4C0; }
+main [style*="border: 1.5px solid #E8C4C0"], main [style*="border: 2px solid #E8C4C0"] { border: 1.8px solid #574B47 !important; box-shadow: 4px 5px 0 #D3C7BB; }
 </style>
 </helmet>
 
@@ -222,7 +222,7 @@ main [style*="border: 1.5px solid #E8C4C0"], main [style*="border: 2px solid #E8
       <p style="margin: 0; display: inline-flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; padding: 10px 18px; border-radius: 18px; background: #fff; border: 1px solid #E8C4C0; font-size: 14px; line-height: 1.7;"><span style="font-weight: 900;">🐰 うさとあそ部で受講</span><span>11/16に開催した講義を、アーカイブ動画で。<br>入部すると<b>第1弾・第2弾どっちも</b>、解約するまで何度でも見られます</span></p>
       <a href="https://usatoasobu.kitone.life/" target="_blank" rel="noopener" data-pill="" style="align-self: flex-start; display: flex; flex-direction: column; gap: 4px; padding: 16px 24px; border-radius: 22px; background: #574B47; color: #FBF8F3; text-decoration: none; border: 4px solid #E8C4C0; max-width: 100%; box-sizing: border-box;"><span style="font-family: 'Kanata', 'Kanata2', 'Shippori Mincho', serif; font-size: clamp(18px, 2.4vw, 22px); line-height: 1.5;">うさとあそ部に入ると<br><span style="background: linear-gradient(transparent 58%, rgba(232,196,192,.55) 58%);">第1弾も第2弾も、どっちも見られる🐰</span></span><span style="font-size: 13px; font-weight: 700;">うさとあそ部をのぞいてみる →</span></a>
       <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px;">
-        <a href="#learn" data-pill="" style="display: inline-flex; align-items: center; gap: 12px; padding: 18px 36px; border-radius: 999px; background: #574B47; color: #fff; text-decoration: none; font-weight: 900; font-size: 17px;">講義の内容を見る ↓</a>
+        <a href="#learn" data-pill="" style="display: inline-flex; align-items: center; gap: 12px; padding: 16px 34px; border-radius: 999px; background: transparent; color: #574B47; border: 2px solid #574B47; text-decoration: none; font-weight: 900; font-size: 17px;">講義の内容を見る ↓</a>
         <a href="https://ai.kitone.life/" style="font-size: 14px;">第1弾（10/19）の内容はこちら →</a>
       </div>
     </div>
@@ -250,7 +250,7 @@ main [style*="border: 1.5px solid #E8C4C0"], main [style*="border: 2px solid #E8
       <h2 style="margin: 12px 0 0; font-family: 'Kanata', 'Kanata2', 'Shippori Mincho', serif; font-weight: 400; font-size: clamp(28px, 4vw, 42px); line-height: 1.5;">LPを外注すると、<br>いくらかかると<br data-sp-br="">思いますか？</h2>
     </div>
     <div style="max-width: 900px; margin: 48px auto 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 20px; align-items: stretch;">
-      <div style="padding: clamp(28px, 4vw, 40px); border-radius: 28px; background: #F3ECE6; display: flex; flex-direction: column; gap: 14px;">
+      <div style="padding: clamp(28px, 4vw, 40px); border-radius: 28px; background: #FFFDF9; border: 1.8px solid #574B47; display: flex; flex-direction: column; gap: 14px;">
         <span style="align-self: flex-start; padding: 4px 14px; border-radius: 999px; background: #fff; font-size: 13px; font-weight: 700;">プロに外注すると</span>
         <p style="margin: 0; font-size: 15px;">LP 1つで</p>
         <p style="margin: 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 8px; font-size: 18px; font-weight: 700;"><span style="font-family: 'Raleway', sans-serif; font-weight: 100; line-height: 1; font-size: clamp(44px, 6vw, 60px);">100,000</span>円〜<span style="font-family: 'Raleway', sans-serif; font-weight: 100; line-height: 1; font-size: clamp(32px, 4.5vw, 44px);">300,000</span>円以上</p>
